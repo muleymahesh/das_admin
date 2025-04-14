@@ -1,0 +1,20 @@
+[14-Apr-2025 16:49:02 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'dasgroup_das_db.area_master' doesn't exist in /home/dasgroup/public_html/admin/add_user.php:9
+Stack trace:
+#0 /home/dasgroup/public_html/admin/add_user.php(9): mysqli->prepare()
+#1 {main}
+  thrown in /home/dasgroup/public_html/admin/add_user.php on line 9
+[14-Apr-2025 16:51:27 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'area_id' in 'field list' in /home/dasgroup/public_html/admin/add_user.php:96
+Stack trace:
+#0 /home/dasgroup/public_html/admin/add_user.php(96): mysqli->query()
+#1 {main}
+  thrown in /home/dasgroup/public_html/admin/add_user.php on line 96
+[14-Apr-2025 16:51:38 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'area_id' in 'field list' in /home/dasgroup/public_html/admin/add_user.php:96
+Stack trace:
+#0 /home/dasgroup/public_html/admin/add_user.php(96): mysqli->query()
+#1 {main}
+  thrown in /home/dasgroup/public_html/admin/add_user.php on line 96
+[14-Apr-2025 16:51:39 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'area_id' in 'field list' in /home/dasgroup/public_html/admin/add_user.php:96
+Stack trace:
+#0 /home/dasgroup/public_html/admin/add_user.php(96): mysqli->query()
+#1 {main}
+  thrown in /home/dasgroup/public_html/admin/add_user.php on line 96

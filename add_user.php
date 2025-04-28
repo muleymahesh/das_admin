@@ -25,7 +25,7 @@ if (isset($_POST['ajax']) && $_POST['ajax'] == 'get_areas' && isset($_POST['regi
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['ajax'])) {
     $name = $_POST['name'];
     $username = $_POST['username'];
-    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+    $password = $_POST['password'];
     $mobile = $_POST['mobile'];
     $role_id = $_POST['role_id'];
     $region_id = $_POST['region_id'];
@@ -125,8 +125,17 @@ ini_set('display_errors', 1);
                     </div>
 
                     <div class="form-group">
-                        <label>Role ID:</label>
-                        <input type="number" name="role_id" class="form-control">
+                        <label>Role :</label>
+                        <select name="role_id" class="form-control" required>
+                            <option value="">--Select Role--</option>
+                            <?php
+                            $roleQuery = "SELECT role_id, role_name FROM roles ORDER BY role_name";
+                            $result = $conn->query($roleQuery);
+                            while ($row = $result->fetch_assoc()) {
+                                echo "<option value='{$row['role_id']}'>{$row['role_name']}</option>";
+                            }
+                            ?>
+                        </select>
                     </div>
 
                     <div class="form-group">
@@ -173,12 +182,12 @@ ini_set('display_errors', 1);
 
                     <div class="form-group">
                         <label>Collection:</label>
-                        <input type="number" step="0.01" name="collection" class="form-control">
+                        <input type="number" value="0" name="collection" class="form-control">
                     </div>
 
                     <div class="form-group">
                         <label>Commission:</label>
-                        <input type="number" step="0.01" name="commission" class="form-control">
+                        <input type="number" value="0" name="commission" class="form-control">
                     </div>
 
                     <button type="submit" class="btn btn-success">Add User</button>

@@ -1,6 +1,12 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+session_start();
+// Check if user is logged in   
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    header('Location: login.php');
+    exit;
+}
 ?>
 <html lang="en">
 
@@ -14,15 +20,15 @@ ini_set('display_errors', 1);
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css" rel="stylesheet">
     <style>
         a {
-            color: rgb(249, 250, 252) !important;
+            color:rgb(249, 250, 252) !important;
         }
-    </style>
+        </style>
 </head>
 
 <body>
 
     <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+   <nav class="navbar navbar-expand-lg navbar-light bg-danger">
         <a class="navbar-brand" href="#">DAS Group</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,65 +62,57 @@ ini_set('display_errors', 1);
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </nav>
 
-
     <!-- Content Section -->
 
     <?php
     require_once 'server.php';
 
     // Fetch data from user_master
-    $sql = "
-    SELECT `um`.`user_id` AS `user_id`, `um`.`name` AS `name`, `um`.`username` AS `username`, `um`.`mobile` AS `mobile`, `r`.`role_name` AS `role`, `rg`.`region_name` AS `region`, `s`.`name` AS `supervisor_name`, `um`.`collection` AS `collection`, `um`.`commission` AS `commission` FROM (((`user_master` `um` join `roles` `r` on((`um`.`role_id` = `r`.`role_id`))) join `regions` `rg` on((`um`.`region_id` = `rg`.`region_id`))) left join `user_master` `s` on((`um`.`supervisor_id` = `s`.`user_id`)));
-    ";
-        $result = $conn->query($sql);
+    $sql = "SELECT 
+  p.*, 
+  COALESCE(SUM(up.quantity), 0) AS admin_quantity
+FROM products p LEFT JOIN user_products up  ON p.id = up.product_id AND up.user_id = ".$_SESSION['user_id']." AND p.status = 1 GROUP BY p.id ORDER BY p.id DESC";
+    $result = $conn->query($sql);
     ?>
 
     <div class="container my-5">
         <div class="card">
-            <div class="card-header">
-                <h2>User List</h2>
-                <a href="add_user.php" class="btn btn-danger">Add User</a>
-            </div>
-            <div class="card-body">
-                <table id="usersTable" class="table table-striped table-bordered">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Username</th>
-                            <th>Mobile</th>
-                            <th>Role</th>
-                            <th>Region</th>
-                            <th>Supervisor</th>
-                            <th>Collection</th>
-                            <th>Commission</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        if ($result->num_rows > 0) {
-                            while ($row = $result->fetch_assoc()) {
-                                echo "<tr>
-                                    <td>" . $row["user_id"] . "</td>
-                                    <td>" . $row["name"] . "</td>
-                                    <td>" . $row["username"] . "</td>
-                                    <td>" . $row["mobile"] . "</td>
-                                    <td>" . $row["role"] . "</td>
-                                    <td>" . $row["region"] . "</td>
-                                    <td>" . $row["supervisor_name"] . "</td>
-                                    <td>" . $row["collection"] . "</td>
-                                    <td>" . $row["commission"] . "</td>
-                                </tr>";
-                            }
-                        } else {
-                            echo "<tr><td colspan='3'>No users found</td></tr>";
-                        }
-                        ?>
-                    </tbody>
-                </table>
+        <div class="card-header">
+           <h2> Product List</h2>
+             <a href="add.php" class="btn btn-primary mb-3">Add Product</a>
 
+            <a href="add_stock.php" class="btn btn-danger">Add Stock</a>
+            <a href="stock_requests.php" class="btn btn-danger">Pending Stock requests</a>
+            <a href="display_stock_region.php" class="btn btn-danger">Region-wise Stock</a>
             </div>
-        </div>
+        <div class="card-body"></div>
+        <table id="usersTable" class="table table-striped table-bordered">
+            <thead>
+    <tr>
+      <th>ID</th><th>Name</th><th>SKU</th><th>Price</th>
+      <th>Stock Qty</th><th>Admin Qty</th><th>Status</th><th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php while ($row = $result->fetch_assoc()) { ?>
+      <tr>
+        <td><?= $row['id'] ?></td>
+        <td><?= $row['name'] ?></td>
+        <td><?= $row['SKU'] ?></td>
+        <td><?= $row['Price'] ?></td>
+        <td><?= $row['quantity'] ?></td>
+        <td><?= $row['admin_quantity'] ?></td> <!-- Quantity for admin -->
+        <td><?= $row['status'] ? 'Active' : 'Inactive' ?></td>
+        <td>
+          <a href="edit.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-warning">Edit</a>
+        </td>
+      </tr>
+    <?php } ?>
+  </tbody>
+        </table>
+
+    </div>
+    </div>
     </div>
 
     <?php

@@ -80,21 +80,31 @@ ini_set('display_errors', 1);
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto"></ul>
+            <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="dashboard.php">Dashboard</a>
+                <a class="nav-link" href="dashboard.php">
+                <span class="mr-1"><i class="fas fa-tachometer-alt"></i></span>Dashboard
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="products.php">Inventory</a>
+                <a class="nav-link" href="products.php">
+                <span class="mr-1"><i class="fas fa-boxes"></i></span>Inventory
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Users <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">
+                <span class="mr-1"><i class="fas fa-users"></i></span>Users <span class="sr-only">(current)</span>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="logout.php">Logout</a>
+                <a class="nav-link" href="logout.php">
+                <span class="mr-1"><i class="fas fa-sign-out-alt"></i></span>Logout
+                </a>
             </li>
             </ul>
         </div>
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </nav>
 
     <div class="container mt-5">

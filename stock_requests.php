@@ -130,8 +130,17 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                         echo "<td>";
 
                         if ($request["status"] === "Pending") {
-                            echo "<button class='btn btn-success btn-sm' onclick='handleAction(" . $request["id"] . ", \"accept\")'>Accept</button> ";
-                            echo "<button class='btn btn-danger btn-sm' onclick='handleAction(" . $request["id"] . ", \"reject\")'>Reject</button>";
+                            echo "<form method='post' action='handleStockRequest.php' style='display:inline;'>";
+                            echo "<input type='hidden' name='id' value='" . $request["id"] . "'>";
+                            echo "<input type='hidden' name='method' value='accept'>";
+                            echo "<button type='submit' class='btn btn-success btn-sm'>Accept</button>";
+                            echo "</form>";
+                            echo "<form method='post' action='handleStockRequest.php' style='display:inline;'>";
+                            echo "<input type='hidden' name='id' value='" . $request["id"] . "'>";
+                            echo "<input type='hidden' name='method' value='reject'>";
+                            echo "<button type='submit' class='btn btn-danger btn-sm'>Reject</button>";
+                            echo "</form>";
+                        
                         } else if ($request["status"] === "Approved") {
                             echo "<button class='btn btn-success btn-sm' disabled>Approved</button>";
                         } else if ($request["status"] === "Rejected") {
@@ -151,7 +160,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             function handleAction(requestId, action) {
                 if (confirm(`Are you sure you want to ${action} this request?`)) {
                     // Perform AJAX request to handle accept/reject
-                    $.post('api.php', { id: requestId, method: action, user_id:userID }, function(response) {
+                    $.post(__DIR__.'handleStockRequest.php', { id: requestId, method: action }, function(response) {
                         alert(response.message);
                         location.reload();
                     }, 'json').fail(function() {

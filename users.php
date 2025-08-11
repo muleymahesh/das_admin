@@ -88,6 +88,7 @@ ini_set('display_errors', 1);
                             <th>Supervisor</th>
                             <th>Collection</th>
                             <th>Commission</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -104,6 +105,11 @@ ini_set('display_errors', 1);
                                     <td>" . $row["supervisor_name"] . "</td>
                                     <td>" . $row["collection"] . "</td>
                                     <td>" . $row["commission"] . "</td>
+                                    <td>
+                                        <a href=\"edit_user.php?id=".$row['user_id']."\" class=\"btn btn-sm btn-primary\">
+                                            <i class=\"fas fa-edit\"></i> Edit
+                                        </a>
+                                    </td>
                                 </tr>";
                             }
                         } else {

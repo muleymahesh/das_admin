@@ -18,7 +18,7 @@ FROM products p LEFT JOIN user_products up  ON p.id = up.product_id AND up.user_
         <div class="card">
         <div class="card-header">
            <h2> Product List</h2>
-             <a href="add_product.php" class="btn btn-primary mb-3">Add Product</a>
+             <!-- <a href="add_product.php" class="btn btn-primary mb-3">Add Product</a> -->
 
             <a href="add_stock.php" class="btn btn-primary mb-3">Add Stock</a>
             <a href="stock_requests.php" class="btn btn-primary mb-3">Pending Stock requests</a>
@@ -29,7 +29,7 @@ FROM products p LEFT JOIN user_products up  ON p.id = up.product_id AND up.user_
             <thead>
     <tr>
       <th>ID</th><th>Name</th><th>SKU</th><th>Price</th>
-      <th>Stock Qty</th><th>Admin Qty</th><th>Status</th><th>Action</th>
+      <th>Stock Qty</th><th>Status</th><th>Action</th>
     </tr>
   </thead>
   <tbody>
@@ -39,7 +39,6 @@ FROM products p LEFT JOIN user_products up  ON p.id = up.product_id AND up.user_
         <td><?= $row['name'] ?></td>
         <td><?= $row['SKU'] ?></td>
         <td><?= $row['Price'] ?></td>
-        <td><?= $row['quantity'] ?></td>
         <td><?= $row['admin_quantity'] ?></td> <!-- Quantity for admin -->
         <td><?= $row['status'] ? 'Active' : 'Inactive' ?></td>
         <td>

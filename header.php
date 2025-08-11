@@ -18,6 +18,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Optional Bootstrap Theme -->
+       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css" rel="stylesheet">
     <style>
         a {
@@ -38,13 +40,18 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="dashboard.php">
                 <span class="mr-1"><i class="fas fa-tachometer-alt"></i></span>Dashboard
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="products.php">
                 <span class="mr-1"><i class="fas fa-boxes"></i></span>Inventory
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="reports.php">
+                <span class="mr-1"><i class="fas fa-chart-bar"></i></span>Reports
                 </a>
             </li>
             <li class="nav-item">
@@ -61,4 +68,5 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         </div>
         <!-- Font Awesome CDN -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
     </nav>

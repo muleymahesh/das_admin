@@ -1,60 +1,8 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+include 'header.php'; // Include header for consistent styling
 ?>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Bootstrap Page</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Optional Bootstrap Theme -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css" rel="stylesheet">
-    <style>
-        a {
-            color: rgb(249, 250, 252) !important;
-        }
-    </style>
-</head>
-
-<body>
-
-    <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-danger">
-        <a class="navbar-brand" href="#">DAS Group</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="dashboard.php">
-                <span class="mr-1"><i class="fas fa-tachometer-alt"></i></span>Dashboard
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="products.php">
-                <span class="mr-1"><i class="fas fa-boxes"></i></span>Inventory
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                <span class="mr-1"><i class="fas fa-users"></i></span>Users <span class="sr-only">(current)</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="logout.php">
-                <span class="mr-1"><i class="fas fa-sign-out-alt"></i></span>Logout
-                </a>
-            </li>
-            </ul>
-        </div>
-        <!-- Font Awesome CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    </nav>
 
 
     <!-- Content Section -->
@@ -64,7 +12,22 @@ ini_set('display_errors', 1);
 
     // Fetch data from user_master
     $sql = "
-    SELECT `um`.`user_id` AS `user_id`, `um`.`name` AS `name`, `um`.`username` AS `username`, `um`.`mobile` AS `mobile`, `r`.`role_name` AS `role`, `rg`.`region_name` AS `region`, `s`.`name` AS `supervisor_name`, `um`.`collection` AS `collection`, `um`.`commission` AS `commission` FROM (((`user_master` `um` join `roles` `r` on((`um`.`role_id` = `r`.`role_id`))) join `regions` `rg` on((`um`.`region_id` = `rg`.`region_id`))) left join `user_master` `s` on((`um`.`supervisor_id` = `s`.`user_id`)));
+    SELECT 
+        um.user_id AS user_id, 
+        um.name AS name, 
+        um.username AS username, 
+        um.mobile AS mobile, 
+        r.role_name AS role, 
+        rg.region_name AS region, 
+        a.name AS area, 
+        s.name AS supervisor_name, 
+        um.collection AS collection, 
+        um.commission AS commission 
+    FROM user_master um 
+        JOIN roles r ON um.role_id = r.role_id
+        JOIN regions rg ON um.region_id = rg.region_id
+        LEFT JOIN areas a ON um.area_id = a.id
+        LEFT JOIN user_master s ON um.supervisor_id = s.user_id;
     ";
         $result = $conn->query($sql);
     ?>
@@ -74,6 +37,8 @@ ini_set('display_errors', 1);
             <div class="card-header">
                 <h2>User List</h2>
                 <a href="add_user.php" class="btn btn-danger">Add User</a>
+                <a href="add_area.php" class="btn btn-danger">Add new Area</a>
+                <a href="add_region.php" class="btn btn-danger">Add new Region</a>
             </div>
             <div class="card-body">
                 <table id="usersTable" class="table table-striped table-bordered">
@@ -85,6 +50,7 @@ ini_set('display_errors', 1);
                             <th>Mobile</th>
                             <th>Role</th>
                             <th>Region</th>
+                            <th>Area</th>
                             <th>Supervisor</th>
                             <th>Collection</th>
                             <th>Commission</th>
@@ -102,6 +68,7 @@ ini_set('display_errors', 1);
                                     <td>" . $row["mobile"] . "</td>
                                     <td>" . $row["role"] . "</td>
                                     <td>" . $row["region"] . "</td>
+                                    <td>" . $row["area"] . "</td>
                                     <td>" . $row["supervisor_name"] . "</td>
                                     <td>" . $row["collection"] . "</td>
                                     <td>" . $row["commission"] . "</td>

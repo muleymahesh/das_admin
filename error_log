@@ -18,3 +18,477 @@ Stack trace:
 #0 /home/dasgroup/public_html/admin/add_user.php(96): mysqli->query()
 #1 {main}
   thrown in /home/dasgroup/public_html/admin/add_user.php on line 96
+[05-May-2025 11:00:05 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[12-May-2025 17:52:34 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[13-May-2025 16:42:41 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[13-May-2025 16:44:47 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[14-May-2025 11:25:13 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[14-May-2025 11:25:21 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[14-May-2025 12:28:33 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:33 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:36 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:36 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:37 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:37 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:37 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:37 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:38 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:38 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:38 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:38 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:38 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:38 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:40 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:40 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:43 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:43 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:52 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:52 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:52 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:52 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:52 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:52 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:52 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:52 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:53 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:53 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:53 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:53 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:53 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:53 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:54 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:54 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:57 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:57 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:58 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:28:58 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:35:50 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:35:50 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:35:58 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:35:58 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:35:58 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:35:58 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:35:59 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:35:59 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:35:59 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:35:59 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:36:00 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:36:00 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:36:00 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:36:00 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:36:00 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:36:00 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:36:00 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:36:00 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:22 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:22 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:24 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:24 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:25 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:25 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:25 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:25 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:26 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:26 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:26 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:26 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:33 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:33 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:33 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:33 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:33 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:33 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:33 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:33 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:34 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:34 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:34 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:34 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:34 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:34 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:35 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:35 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:53 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:53 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:53 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:53 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:54 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:54 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:54 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:54 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:54 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:54 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:55 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:55 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:57 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:38:57 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:39:01 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[14-May-2025 12:39:36 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:39:36 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:39:36 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:39:36 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:39:36 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:39:36 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:39:36 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:39:36 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:39:59 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:39:59 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:39:59 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:39:59 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:40:00 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:40:00 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:40:01 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:40:01 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:40:02 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:40:02 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:40:03 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:40:03 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:40:04 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[14-May-2025 12:40:04 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[20-May-2025 11:47:48 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[20-May-2025 11:47:48 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[30-Jul-2025 23:33:04 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[30-Jul-2025 23:33:21 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[30-Jul-2025 23:33:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[30-Jul-2025 23:38:12 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[30-Jul-2025 23:38:28 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[31-Jul-2025 12:26:56 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[31-Jul-2025 12:26:56 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[31-Jul-2025 12:27:00 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[31-Jul-2025 12:27:00 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[31-Jul-2025 12:28:01 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[31-Jul-2025 12:28:01 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[31-Jul-2025 12:28:05 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[31-Jul-2025 12:28:05 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[31-Jul-2025 12:28:16 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[31-Jul-2025 12:28:16 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[31-Jul-2025 12:31:47 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[31-Jul-2025 12:31:47 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[31-Jul-2025 12:31:47 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[31-Jul-2025 12:31:47 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[04-Aug-2025 12:41:34 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[04-Aug-2025 12:41:39 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[04-Aug-2025 12:53:13 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[04-Aug-2025 20:28:58 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[04-Aug-2025 20:28:58 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[04-Aug-2025 20:29:09 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[04-Aug-2025 20:29:13 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[04-Aug-2025 23:07:55 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'sonaljadhav' for key 'user_master.username' in /home/dasgroup/public_html/admin/add_user.php:43
+Stack trace:
+#0 /home/dasgroup/public_html/admin/add_user.php(43): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/dasgroup/public_html/admin/add_user.php on line 43
+[04-Aug-2025 23:08:22 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'shivarajpujari' for key 'user_master.username' in /home/dasgroup/public_html/admin/add_user.php:43
+Stack trace:
+#0 /home/dasgroup/public_html/admin/add_user.php(43): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/dasgroup/public_html/admin/add_user.php on line 43
+[04-Aug-2025 23:12:34 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'pranithulalkar' for key 'user_master.username' in /home/dasgroup/public_html/admin/add_user.php:43
+Stack trace:
+#0 /home/dasgroup/public_html/admin/add_user.php(43): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/dasgroup/public_html/admin/add_user.php on line 43
+[04-Aug-2025 23:23:50 Asia/Kolkata] PHP Parse error:  syntax error, unexpected identifier "edit_user", expecting "," or ";" in /home/dasgroup/public_html/admin/users.php on line 109
+[04-Aug-2025 23:23:53 Asia/Kolkata] PHP Parse error:  syntax error, unexpected identifier "edit_user", expecting "," or ";" in /home/dasgroup/public_html/admin/users.php on line 109
+[04-Aug-2025 23:23:56 Asia/Kolkata] PHP Parse error:  syntax error, unexpected identifier "edit_user", expecting "," or ";" in /home/dasgroup/public_html/admin/users.php on line 109
+[04-Aug-2025 23:23:57 Asia/Kolkata] PHP Parse error:  syntax error, unexpected identifier "edit_user", expecting "," or ";" in /home/dasgroup/public_html/admin/users.php on line 109
+[04-Aug-2025 23:26:17 Asia/Kolkata] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:26:17 Asia/Kolkata] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:26:17 Asia/Kolkata] PHP Warning:  Undefined variable $conn in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:26:17 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/dasgroup/public_html/admin/get-supervisors.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:28:19 Asia/Kolkata] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:28:19 Asia/Kolkata] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:28:19 Asia/Kolkata] PHP Warning:  Undefined variable $conn in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:28:19 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/dasgroup/public_html/admin/get-supervisors.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:29:06 Asia/Kolkata] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:29:06 Asia/Kolkata] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:29:06 Asia/Kolkata] PHP Warning:  Undefined variable $conn in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:29:06 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/dasgroup/public_html/admin/get-supervisors.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:29:23 Asia/Kolkata] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:29:23 Asia/Kolkata] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:29:23 Asia/Kolkata] PHP Warning:  Undefined variable $conn in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:29:23 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/dasgroup/public_html/admin/get-supervisors.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:29:35 Asia/Kolkata] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:29:35 Asia/Kolkata] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:29:35 Asia/Kolkata] PHP Warning:  Undefined variable $conn in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:29:35 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/dasgroup/public_html/admin/get-supervisors.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:35:09 Asia/Kolkata] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:35:09 Asia/Kolkata] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:35:09 Asia/Kolkata] PHP Warning:  Undefined variable $conn in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:35:09 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/dasgroup/public_html/admin/get-supervisors.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:35:19 Asia/Kolkata] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:35:19 Asia/Kolkata] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:35:19 Asia/Kolkata] PHP Warning:  Undefined variable $conn in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:35:19 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/dasgroup/public_html/admin/get-supervisors.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:35:56 Asia/Kolkata] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:35:56 Asia/Kolkata] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:35:56 Asia/Kolkata] PHP Warning:  Undefined variable $conn in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:35:56 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/dasgroup/public_html/admin/get-supervisors.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:35:57 Asia/Kolkata] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:35:57 Asia/Kolkata] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dasgroup/public_html/admin/get-supervisors.php on line 2
+[04-Aug-2025 23:35:57 Asia/Kolkata] PHP Warning:  Undefined variable $conn in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[04-Aug-2025 23:35:57 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/dasgroup/public_html/admin/get-supervisors.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/get-supervisors.php on line 5
+[05-Aug-2025 00:07:27 Asia/Kolkata] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/dasgroup/public_html/admin/update-user.php on line 2
+[05-Aug-2025 00:07:27 Asia/Kolkata] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dasgroup/public_html/admin/update-user.php on line 2
+[05-Aug-2025 00:07:28 Asia/Kolkata] PHP Warning:  Undefined variable $conn in /home/dasgroup/public_html/admin/update-user.php on line 45
+[05-Aug-2025 00:07:28 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/dasgroup/public_html/admin/update-user.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/update-user.php on line 45
+[05-Aug-2025 13:11:45 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'pranotipatil' for key 'user_master.username' in /home/dasgroup/public_html/admin/add_user.php:43
+Stack trace:
+#0 /home/dasgroup/public_html/admin/add_user.php(43): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/dasgroup/public_html/admin/add_user.php on line 43
+[05-Aug-2025 21:22:27 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[05-Aug-2025 21:22:27 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[05-Aug-2025 21:22:34 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[05-Aug-2025 21:22:34 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[06-Aug-2025 09:23:32 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[06-Aug-2025 09:26:04 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[06-Aug-2025 13:09:42 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'amrutpandekar' for key 'user_master.username' in /home/dasgroup/public_html/admin/add_user.php:43
+Stack trace:
+#0 /home/dasgroup/public_html/admin/add_user.php(43): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/dasgroup/public_html/admin/add_user.php on line 43
+[06-Aug-2025 14:05:21 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'rupalikamble' for key 'user_master.username' in /home/dasgroup/public_html/admin/add_user.php:43
+Stack trace:
+#0 /home/dasgroup/public_html/admin/add_user.php(43): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/dasgroup/public_html/admin/add_user.php on line 43
+[06-Aug-2025 16:10:19 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'manmohantinge' for key 'user_master.username' in /home/dasgroup/public_html/admin/add_user.php:43
+Stack trace:
+#0 /home/dasgroup/public_html/admin/add_user.php(43): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/dasgroup/public_html/admin/add_user.php on line 43
+[07-Aug-2025 00:14:34 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/reports.php(3): require('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13
+[07-Aug-2025 00:14:41 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/reports.php(3): require('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13
+[07-Aug-2025 00:17:19 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class "Mpdf\Mpdf" not found in /home/dasgroup/public_html/admin/reports.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/reports.php on line 55
+[07-Aug-2025 00:21:29 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class "Mpdf\Mpdf" not found in /home/dasgroup/public_html/admin/reports.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/reports.php on line 56
+[07-Aug-2025 00:22:56 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class "Mpdf\Mpdf" not found in /home/dasgroup/public_html/admin/reports.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/reports.php on line 56
+[07-Aug-2025 00:23:30 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class "Mpdf\Mpdf" not found in /home/dasgroup/public_html/admin/reports.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/reports.php on line 56
+[07-Aug-2025 00:23:43 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class "Mpdf\Mpdf" not found in /home/dasgroup/public_html/admin/reports.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/reports.php on line 56
+[07-Aug-2025 00:27:52 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class "Mpdf\Mpdf" not found in /home/dasgroup/public_html/admin/reports.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/reports.php on line 55
+[07-Aug-2025 00:29:25 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class "Mpdf\Mpdf" not found in /home/dasgroup/public_html/admin/reports.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/reports.php on line 55
+[07-Aug-2025 09:40:18 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class "Mpdf\Mpdf" not found in /home/dasgroup/public_html/admin/reports.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/reports.php on line 55
+[07-Aug-2025 09:41:01 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[07-Aug-2025 10:22:03 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'kerbajichavan' for key 'user_master.username' in /home/dasgroup/public_html/admin/update-user.php:45
+Stack trace:
+#0 /home/dasgroup/public_html/admin/update-user.php(45): mysqli->query()
+#1 {main}
+  thrown in /home/dasgroup/public_html/admin/update-user.php on line 45
+[07-Aug-2025 20:54:32 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'mohitrathod' for key 'user_master.username' in /home/dasgroup/public_html/admin/add_user.php:43
+Stack trace:
+#0 /home/dasgroup/public_html/admin/add_user.php(43): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/dasgroup/public_html/admin/add_user.php on line 43
+[07-Aug-2025 23:44:06 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class "Mpdf\Mpdf" not found in /home/dasgroup/public_html/admin/reports.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/reports.php on line 55
+[07-Aug-2025 23:48:26 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class "Mpdf\Mpdf" not found in /home/dasgroup/public_html/admin/reports.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/reports.php on line 55
+[07-Aug-2025 23:51:03 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class "Mpdf\Mpdf" not found in /home/dasgroup/public_html/admin/reports.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/reports.php on line 55
+[08-Aug-2025 12:09:52 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[08-Aug-2025 12:10:49 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[08-Aug-2025 12:10:49 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/dasgroup/public_html/admin/handleStockRequest.php on line 105
+[08-Aug-2025 12:10:58 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/handleStockRequest.php on line 44
+[09-Aug-2025 11:25:25 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'kishorhadmode' for key 'user_master.username' in /home/dasgroup/public_html/admin/update-user.php:45
+Stack trace:
+#0 /home/dasgroup/public_html/admin/update-user.php(45): mysqli->query()
+#1 {main}
+  thrown in /home/dasgroup/public_html/admin/update-user.php on line 45
+[09-Aug-2025 14:21:35 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class "Mpdf\Mpdf" not found in /home/dasgroup/public_html/admin/reports.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/reports.php on line 55
+[09-Aug-2025 19:34:18 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class "Mpdf\Mpdf" not found in /home/dasgroup/public_html/admin/reports.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/reports.php on line 55
+[10-Aug-2025 13:23:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/dasgroup/public_html/admin/update-user.php on line 4
+[10-Aug-2025 13:23:44 Asia/Kolkata] PHP Warning:  Undefined array key "name" in /home/dasgroup/public_html/admin/update-user.php on line 5
+[10-Aug-2025 13:23:44 Asia/Kolkata] PHP Warning:  Undefined array key "username" in /home/dasgroup/public_html/admin/update-user.php on line 6
+[10-Aug-2025 13:23:44 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home/dasgroup/public_html/admin/update-user.php on line 7
+[10-Aug-2025 13:23:44 Asia/Kolkata] PHP Warning:  Undefined array key "mobile" in /home/dasgroup/public_html/admin/update-user.php on line 8
+[10-Aug-2025 13:23:44 Asia/Kolkata] PHP Warning:  Undefined array key "role_id" in /home/dasgroup/public_html/admin/update-user.php on line 9
+[10-Aug-2025 13:23:44 Asia/Kolkata] PHP Warning:  Undefined array key "region_id" in /home/dasgroup/public_html/admin/update-user.php on line 10
+[10-Aug-2025 13:23:44 Asia/Kolkata] PHP Warning:  Undefined array key "area_id" in /home/dasgroup/public_html/admin/update-user.php on line 11
+[10-Aug-2025 13:23:44 Asia/Kolkata] PHP Warning:  Undefined array key "supervisor_id" in /home/dasgroup/public_html/admin/update-user.php on line 12
+[10-Aug-2025 13:23:44 Asia/Kolkata] PHP Warning:  Undefined array key "collection" in /home/dasgroup/public_html/admin/update-user.php on line 13
+[10-Aug-2025 13:23:44 Asia/Kolkata] PHP Warning:  Undefined array key "commission" in /home/dasgroup/public_html/admin/update-user.php on line 14
+[11-Aug-2025 11:46:44 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/add_user.php(3): require_once('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13
+[11-Aug-2025 11:46:47 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/add_user.php(3): require_once('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13
+[11-Aug-2025 11:46:52 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/login.php(2): include('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13
+[11-Aug-2025 11:47:02 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/login.php(2): include('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13
+[11-Aug-2025 11:47:29 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/login.php(2): include('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13
+[11-Aug-2025 12:40:52 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/reports.php(2): include('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13
+[11-Aug-2025 12:40:54 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/reports.php(2): include('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13
+[11-Aug-2025 12:40:58 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/reports.php(2): include('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13
+[11-Aug-2025 12:54:07 Asia/Kolkata] PHP Warning:  require(/home/dasgroup/public_html/admin/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/dasgroup/public_html/admin/index.php on line 3
+[11-Aug-2025 12:54:07 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required '/home/dasgroup/public_html/admin/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dasgroup/public_html/admin/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/index.php on line 3
+[11-Aug-2025 12:54:08 Asia/Kolkata] PHP Warning:  require(/home/dasgroup/public_html/admin/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/dasgroup/public_html/admin/index.php on line 3
+[11-Aug-2025 12:54:08 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required '/home/dasgroup/public_html/admin/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dasgroup/public_html/admin/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/index.php on line 3
+[11-Aug-2025 12:54:15 Asia/Kolkata] PHP Warning:  require(/home/dasgroup/public_html/admin/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/dasgroup/public_html/admin/index.php on line 3
+[11-Aug-2025 12:54:15 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required '/home/dasgroup/public_html/admin/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dasgroup/public_html/admin/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/index.php on line 3
+[11-Aug-2025 12:57:02 Asia/Kolkata] PHP Warning:  require(/home/dasgroup/public_html/admin/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/dasgroup/public_html/admin/index.php on line 3
+[11-Aug-2025 12:57:02 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required '/home/dasgroup/public_html/admin/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dasgroup/public_html/admin/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/index.php on line 3
+[11-Aug-2025 12:57:05 Asia/Kolkata] PHP Warning:  require(/home/dasgroup/public_html/admin/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/dasgroup/public_html/admin/index.php on line 3
+[11-Aug-2025 12:57:05 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required '/home/dasgroup/public_html/admin/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dasgroup/public_html/admin/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/dasgroup/public_html/admin/index.php on line 3
+[11-Aug-2025 12:57:12 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/login.php(2): include('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13
+[11-Aug-2025 12:58:14 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/login.php(4): include('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13
+[11-Aug-2025 12:58:19 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/login.php(4): include('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13
+[11-Aug-2025 12:59:30 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/login.php(4): include('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13
+[11-Aug-2025 12:59:33 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/login.php(4): include('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13
+[11-Aug-2025 12:59:35 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/dasgroup/public_html/admin/server.php:13
+Stack trace:
+#0 /home/dasgroup/public_html/admin/server.php(13): mysqli->__construct()
+#1 /home/dasgroup/public_html/admin/login.php(4): include('/home/dasgroup/...')
+#2 {main}
+  thrown in /home/dasgroup/public_html/admin/server.php on line 13

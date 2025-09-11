@@ -50,6 +50,11 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="deposit_request.php">
+                <span class="mr-1"><i class="fas fa-chart-bar"></i></span>Collections
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="reports.php">
                 <span class="mr-1"><i class="fas fa-chart-bar"></i></span>Reports
                 </a>

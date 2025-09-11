@@ -174,8 +174,7 @@ $(document).ready(function () {
   }
 
   function loadSupervisors(selectedSupervisorId = null) {
-    if (!areaId) return;
-    $.post("get-supervisors.php", { area_id: areaId, selected_supervisor_id: selectedSupervisorId }, function (data) {
+    $.post("get-supervisors.php", { selected_supervisor_id: selectedSupervisorId }, function (data) {
       $("#supervisor").html(data);
       if (selectedSupervisorId) $("#supervisor").val(selectedSupervisorId).change();
     });
@@ -191,9 +190,7 @@ $(document).ready(function () {
     $("#supervisor").html('<option value="">-- Select Supervisor --</option>');
   });
 
-  $("#area").change(function () {
-    loadSupervisors($(this).val());
-  });
+ 
 });
 </script>
 <?php include 'footer.php'; ?>

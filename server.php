@@ -2,9 +2,9 @@
 
 $servername = "localhost";
 
-$username = "root";
+$username = "dasgroup_das_db_user";
 
-$password = "";
+$password = "Das@123#";
 
 $dbname = "dasgroup_das_db";
 

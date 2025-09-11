@@ -1,0 +1,13 @@
+# Enable mod_rewrite
+RewriteEngine On
+
+# Make sure we're in the /admin folder
+RewriteBase /admin/
+
+# Don't rewrite requests for real files or directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Keep /admin prefix for all requests
+RewriteRule ^(.*)$ index.php [L]

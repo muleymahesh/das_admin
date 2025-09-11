@@ -1,66 +1,171 @@
 <?php
-// DB Connection
-include 'server.php';
+include 'server.php'; // Your DB connection
 
-$region_id = isset($_GET['region_id']) ? (int)$_GET['region_id'] : 0;
-$month = isset($_GET['month']) ? $_GET['month'] : date('Y-m');
+// Handle month/year filter
+$month = isset($_GET['month']) ? intval($_GET['month']) : date('n');
+$year = isset($_GET['year']) ? intval($_GET['year']) : date('Y');
 
-// Fetch Region Name
-$region_name = '';
-$res = $conn->query("SELECT region_name FROM regions WHERE region_id = $region_id");
-if ($res && $row = $res->fetch_assoc()) {
-    $region_name = $row['region_name'];
+// Get all products (for dynamic columns)
+$productQuery = $conn->query("SELECT id, SKU as name FROM products ORDER BY id");
+$products = [];
+while ($p = $productQuery->fetch_assoc()) {
+    $products[$p['id']] = $p['name'];
 }
 
-// Product-wise sales for region
-$sql = "
-    SELECT p.name AS product_name,
-           SUM(1) AS total_qty,
-           p.off_cash,
-           SUM(1 * p.off_cash) AS total_sales
-    FROM sales_master sm
-    INNER JOIN customers c ON sm.customer_id = c.customer_id
-    INNER JOIN products p ON sm.product_id = p.id
-    WHERE c.region_id = ? AND DATE_FORMAT(sm.sales_date, '%Y-%m') = ?
-    GROUP BY p.id, p.name, p.off_cash
-    ORDER BY total_sales DESC
-";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("is", $region_id, $month);
-$stmt->execute();
-$result = $stmt->get_result();
+// Get all regions
+$regionQuery = $conn->query("SELECT region_id, region_name FROM regions ORDER BY region_name");
+
+// Filter form
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title><?php echo $region_name; ?> - Sales Details</title>
-    <style>
-        table { border-collapse: collapse; width: 100%; }
-        th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
-        th { background-color: #f4f4f4; }
-    </style>
-</head>
-<body>
-<h2>Sales Details - <?php echo htmlspecialchars($region_name); ?> (<?php echo $month; ?>)</h2>
-<a href="region_sales_report.php?month=<?php echo $month; ?>">← Back to Report</a>
-<br><br>
+<?php include 'header.php'; // Include your header file ?>
 
-<table>
-    <tr>
-        <th>Product Name</th>
-        <th>Off Cash (₹)</th>
-        <th>Total Quantity Sold</th>
-        <th>Total Sales (₹)</th>
-    </tr>
-    <?php while($row = $result->fetch_assoc()) { ?>
-        <tr>
-            <td><?php echo htmlspecialchars($row['product_name']); ?></td>
-            <td><?php echo number_format($row['off_cash'], 2); ?></td>
-            <td><?php echo (int)$row['total_qty']; ?></td>
-            <td><?php echo number_format($row['total_sales'], 2); ?></td>
-        </tr>
-    <?php } ?>
-</table>
+<div class="container my-4">
+    <form method="GET" class="row g-3 align-items-end mb-4">
+        <div class="col-auto">
+            <label for="month" class="form-label">Month:</label>
+            <select name="month" id="month" class="form-select">
+                <?php for ($m = 1; $m <= 12; $m++): ?>
+                    <option value="<?= $m ?>" <?= $m == $month ? 'selected' : '' ?>>
+                        <?= date("F", mktime(0, 0, 0, $m, 1)) ?>
+                    </option>
+                <?php endfor; ?>
+            </select>
+        </div>
+        <div class="col-auto">
+            <label for="year" class="form-label">Year:</label>
+            <select name="year" id="year" class="form-select">
+                <?php for ($y = date('Y') - 5; $y <= date('Y'); $y++): ?>
+                    <option value="<?= $y ?>" <?= $y == $year ? 'selected' : '' ?>><?= $y ?></option>
+                <?php endfor; ?>
+            </select>
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </div>
+    </form>
 
-</body>
-</html>
+<?php
+// Loop through each region and create a table
+while ($region = $regionQuery->fetch_assoc()) {
+    echo '<div class="mb-5">';
+
+    // Get all areas in this region
+    $areaQuery = $conn->prepare("SELECT id, name FROM areas WHERE region_id = ?");
+    $areaQuery->bind_param("i", $region['region_id']);
+    $areaQuery->execute();
+    $areaResult = $areaQuery->get_result();
+
+    if ($areaResult->num_rows == 0) {
+        echo '<div class="alert alert-warning">No areas found for this region.</div>';
+        echo '</div>';
+        continue;
+    }
+
+    echo '<div class="table-responsive">';
+    echo '<div class="card">';
+    echo '<div class="card-header text-center"><h4 class="mb-0">Region: ' . htmlspecialchars($region['region_name']) . '</h4></div>';
+    echo '<div class="card-body p-0">';
+    echo '<table class="table table-bordered table-striped align-middle mb-0">';
+    echo '<thead class="table-light"><tr>
+            <th>Area Name</th>';
+
+    // Dynamic product columns
+    foreach ($products as $prodName) {
+        echo '<th>' . htmlspecialchars($prodName) . '</th>';
+    }
+    echo '<th>Total Devices Sold</th><th>Total Sales (₹)</th></tr></thead><tbody>';
+
+    // Loop through areas
+    while ($area = $areaResult->fetch_assoc()) {
+        $areaId = $area['id'];
+
+        // Initialize  product sales
+        $productSales = array_fill_keys(array_keys($products), 0);
+        $totalDevices = 0;
+        $totalSales = 0;
+
+        // Fetch sales data for this area (linked via user -> area)
+        $salesQuery = $conn->prepare("
+            SELECT sm.product_id, COUNT(sm.product_id) AS qty, SUM(p.off_cash) AS sales_amount
+            FROM sales_master sm
+            JOIN products p ON sm.product_id = p.id
+            JOIN user_master u ON sm.user_id = u.user_id
+            WHERE u.area_id = ?
+              AND MONTH(sm.sales_date) = ?
+              AND YEAR(sm.sales_date) = ?
+            GROUP BY sm.product_id
+        ");
+        $salesQuery->bind_param("iii", $areaId, $month, $year);
+        $salesQuery->execute();
+        $salesResult = $salesQuery->get_result();
+
+        while ($row = $salesResult->fetch_assoc()) {
+            $pid = $row['product_id'];
+            $qty = $row['qty'];
+            $salesAmt = $row['sales_amount'];
+
+            $productSales[$pid] = $qty;
+            $totalDevices += $qty;
+            $totalSales += ($qty * ($salesAmt / $qty)); // ensure off_cash used
+        }
+
+        // Row output
+        echo '<tr>
+                <td>' . htmlspecialchars($area['name']) . '</td>';
+        foreach ($products as $pid => $pname) {
+            echo '<td class="text-center">' . $productSales[$pid] . '</td>';
+        }
+        echo '<td class="text-center">' . $totalDevices . '</td>
+              <td class="text-center">' . number_format($totalSales, 2) . '</td>
+              </tr>';
+    }
+    // Calculate totals for the region
+    // Rewind areaResult to fetch again for totals
+    $areaResult->data_seek(0);
+    $regionProductTotals = array_fill_keys(array_keys($products), 0);
+    $regionTotalDevices = 0;
+    $regionTotalSales = 0;
+
+    while ($area = $areaResult->fetch_assoc()) {
+        $areaId = $area['id'];
+
+        // Fetch sales data for this area
+        $salesQuery = $conn->prepare("
+            SELECT sm.product_id, COUNT(sm.product_id) AS qty, SUM(p.off_cash) AS sales_amount
+            FROM sales_master sm
+            JOIN products p ON sm.product_id = p.id
+            JOIN user_master u ON sm.user_id = u.user_id
+            WHERE u.area_id = ?
+              AND MONTH(sm.sales_date) = ?
+              AND YEAR(sm.sales_date) = ?
+            GROUP BY sm.product_id
+        ");
+        $salesQuery->bind_param("iii", $areaId, $month, $year);
+        $salesQuery->execute();
+        $salesResult = $salesQuery->get_result();
+
+        while ($row = $salesResult->fetch_assoc()) {
+            $pid = $row['product_id'];
+            $qty = $row['qty'];
+            $salesAmt = $row['sales_amount'];
+
+            $regionProductTotals[$pid] += $qty;
+            $regionTotalDevices += $qty;
+            $regionTotalSales += ($qty * ($salesAmt / $qty));
+        }
+    }
+
+    // Output totals row
+    echo '<tr class="table-secondary fw-bold">';
+    echo '<td>Total</td>';
+    foreach ($products as $pid => $pname) {
+        echo '<td class="text-center">' . $regionProductTotals[$pid] . '</td>';
+    }
+    echo '<td class="text-center">' . $regionTotalDevices . '</td>';
+    echo '<td class="text-center">' . number_format($regionTotalSales, 2) . '</td>';
+    echo '</tr>';
+    echo '</tbody></table></div></div></div></div>';
+}
+?>
+</div>
+<?php include 'footer.php'; // Include your footer file ?>

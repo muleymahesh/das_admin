@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<?php include 'header.php'; ?>
+<?php include 'header.php'; 
+include_once 'server.php';?>
 
     <!-- Cards Section -->
     <div class="container my-4">
@@ -11,7 +12,6 @@
                     <div class="card-body">
                         <h5 class="card-title">
                             <?php
-                            include 'server.php';
                             $productQuery = "SELECT COUNT(*) as product_count FROM products";
                             $productResult = mysqli_query($conn, $productQuery);
                             $productRow = mysqli_fetch_assoc($productResult);
@@ -72,7 +72,6 @@
                     <tbody>
                         <?php
                         // Include the server.php file to fetch data
-                        include 'server.php';
 
                         // Fetch regions data
                         $query = "SELECT regions.region_id, regions.region_name, 
